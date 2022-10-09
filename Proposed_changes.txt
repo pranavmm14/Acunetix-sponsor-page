@@ -1,0 +1,5 @@
+1) Adding js to make cards change colour or add any animation to card on hover.
+2) Implemention of code to fetch sponsor details with loops rater than hard coding
+3) setting up task.json to help update site in short time during events.
+4) adding learn more option for overflowing text 
+5) <<You can add your own changes>>

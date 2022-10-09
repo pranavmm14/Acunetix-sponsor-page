@@ -1,0 +1,62 @@
+.spon_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 20rem;
+    max-height: 15rem;
+    height: auto;
+    margin: auto;
+    background-color: rgb(57, 14, 151);
+}
+.card__collection {
+    position: relative;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    font-family: "Do Hyeon",sans-serif;
+}
+.card {
+    width: 22rem;
+    height: 25rem;
+    padding: 1rem;
+    float: left;
+    clear: top;
+    border-width: 0.5%;
+    border-style: none solid solid none ;
+    border-color: #060011;
+    background-color:rgb(57, 14, 151);
+    margin: 1rem;
+
+}
+body{
+    background-color: #390e97;
+}
+.spon_text{
+    height: 6rem;
+    font-size: medium;
+    padding: 5%;
+    color: #ffffff;
+    text-align: justify;
+    text-overflow: ellipsis;
+    background-color: rgb(57, 14, 151);
+
+}
+.spon_type{
+    font-size: xx-large;
+    text-decoration:none;
+    color: #f1e1ee;
+    padding: 2px;
+    margin-bottom: 1%;
+    font-family: 'Segoe UI bold', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: rgb(57, 14, 151);
+}
+#OurSponsors{
+    color: white;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+    
+}
