@@ -2,16 +2,21 @@
 {%block title%} Sponsors {%endblock%}
 
 {%block body%}
+<video id="background-video" autoplay loop muted>
+    <source src="{{url_for('static', filename='mv1.mp4')}}" type="video/mp4">
+</video>
 <div class="name" id="OurSponsors">
     <h1> Acunetix 10.0 Sponsors</h1>
 </div>
 <div class="card_collection">
     <div class="card">
         <div class="spon_type">Sponsorship Type</div>
-        <a href="#">
-            <!-- <div class="spon_name">Sponsor Name</div> -->
-            <img src="{{url_for('static', filename='spon_1.jpg')}}" class="spon_img" alt="...">
-        </a>
+        <div class="spon_img">
+            <a href="#">
+                <!-- <div class="spon_name">Sponsor Name</div> -->
+                <img src="{{url_for('static', filename='spon_1.jpg')}}" class="spon_img" alt="...">
+            </a>
+        </div>
         <div class="spon_text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel convallis leo, sed
             tempor orci. Nulla vitae sem ac diam euismod semper. Mauris ullamcorper et diam ac sagittis. Fusce ac
@@ -22,10 +27,12 @@
     <div class="card">
         <div class="spon_type">Sponsorship Type</div>
         <br>
-        <a href="#">
-            <!-- <div class="spon_name">Sponsor Name</div> -->
-            <img src="{{url_for('static', filename='spon_2.jpg')}}" class="spon_img" alt="...">
-        </a>
+        <div class="spon_img">
+            <a href="#">
+                <!-- <div class="spon_name">Sponsor Name</div> -->
+                <img src="{{url_for('static', filename='spon_2.jpg')}}" class="spon_img" alt="...">
+            </a>
+        </div>
         <div class="spon_text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel convallis
             leo, sed tempor orci. Nulla vitae sem ac diam euismod semper. Mauris ullamcorper et diam ac sagittis.
@@ -49,10 +56,12 @@
     <div class="card">
         <div class="spon_type">Sponsorship Type</div>
         <br>
-        <a href="#">
-            <!-- <div class="spon_name">Sponsor Name</div> -->
-            <img src="{{url_for('static', filename='spon_5.png')}}" class="spon_img" alt="...">
-        </a>
+        <div class="spon_img">
+            <a href="#">
+                <!-- <div class="spon_name">Sponsor Name</div> -->
+                <img src="{{url_for('static', filename='spon_5.png')}}" class="spon_img" alt="...">
+            </a>
+        </div>
         <div class="spon_text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel convallis
             leo, sed tempor orci. Nulla vitae sem ac diam euismod semper. Mauris ullamcorper et diam ac sagittis.
@@ -62,10 +71,13 @@
     </div>
     <div class="card">
         <div class="spon_type">Sponsorship Type</div>
-        <a href="#">
-            <!-- <div class="spon_name">Sponsor Name</div> -->
-            <img src="{{url_for('static', filename='spon_6.png')}}" class="spon_img" alt="...">
-        </a>
+        <br>
+        <div class="spon_img">
+            <a href="#">
+                <!-- <div class="spon_name">Sponsor Name</div> -->
+                <img src="{{url_for('static', filename='spon_6.png')}}" class="spon_img" alt="...">
+            </a>
+        </div>
         <div class="spon_text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel convallis leo, sed
             tempor orci. Nulla vitae sem ac diam euismod semper. Mauris ullamcorper et diam ac sagittis. Fusce ac
@@ -90,5 +102,4 @@
         </div>
     </div>
 </div>
-
 {%endblock%}

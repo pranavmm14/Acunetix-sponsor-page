@@ -1,0 +1,198 @@
+/* For Background video of Page */
+#background-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* Acunetix 10.0 Heading */
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative');
+#OurSponsors{
+    color: white;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+    padding: 10px;
+    margin: 5px;
+    
+}
+
+/* Division which stores all the cards */
+.card_collection{
+    position: relative;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card_collection .card {
+    width: 352px;
+    height: 400px;
+    padding: 16px;
+    float: left;
+    clear: top;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #1a0136;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.87);
+    background-color: #390e9759;
+    text-overflow:clip;    
+    backdrop-filter: blur(20px);
+    margin: 32px;
+}
+
+/* Card blocks */
+.service-block-two {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+}
+.service-block-two .inner-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+}
+.service-block-two .inner-box:before {
+    position: absolute;
+    content: '';
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 50%;
+    opacity: 0;
+    background-color: #141d38;
+    -webkit-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+.service-block-two .inner-box .shape-one {
+    content: '';
+    width: 250px;
+    height: 250px;
+    background: rgb(0, 153, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: -120px;
+    opacity: 0.4;
+    right: -120px;
+    transform: scale(0);
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+.service-block-two .inner-box .shape-two {
+    content: '';
+    width: 373px;
+    height: 373px;
+    background: rgb(0, 153, 255);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -200px;
+    left: -190px;
+    z-index: 1;
+    opacity: 0;
+    transform: scale(0);
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+.service-block-two .inner-box .text {
+    position: absolute;
+    top:5rem;
+    color: #222222;
+    opacity: 0;
+    text-overflow:initial;
+    z-index: 2;
+    font-size: 16px;
+    line-height: 1.7em;
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+.service-block-two .inner-box:hover::before {
+    height: 100%;
+    opacity: 1;
+}
+.service-block-two .inner-box:hover .shape-one {
+    transform: scale(1);
+    -webkit-transition-delay: 300ms;
+    -ms-transition-delay: 300ms;
+    transition-delay: 300ms;
+}
+.service-block-two .inner-box:hover .shape-two {
+    opacity: 0.4;
+    transform: scale(1);
+    -webkit-transition-delay: 400ms;
+    -ms-transition-delay: 400ms;
+    transition-delay: 400ms;
+}
+
+.service-block-two .inner-box:hover .icon-box, 
+.service-block-two .inner-box:hover .spon_name,
+.service-block-two .inner-box:hover h3 , 
+.service-block-two .inner-box:hover h5 a, 
+.service-block-two .inner-box:hover .text {
+    -webkit-transition-delay: 400ms;
+    -ms-transition-delay: 400ms;
+    transition-delay: 400ms;
+    color: #ffffff;
+    opacity: 100%;
+}
+
+* .spon_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 320px;
+    max-height: 240px;
+    height: auto;
+    margin: auto;
+}
+
+.spon_name{
+    text-decoration: underline rgb(255, 255, 255);
+    text-underline-offset: 3px;
+    font-size: xx-large;
+    padding: auto;
+    width: 300px;
+    position: relative;
+    top: -50px;
+    opacity: 0;
+}
+
+.spon_type{
+    font-size: xx-large;
+    text-decoration:none;
+    color: #f1e1ee;
+    padding: 5px;
+    margin-bottom: 7px;
+    font-family: 'Segoe UI bold', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: 390e97;
+}
+
+.spon_text{
+    height: 96px;
+    font-size: medium;
+    padding: 5%;
+    color: #ffffff;
+    text-align: justify;
+}
